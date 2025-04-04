@@ -59,8 +59,8 @@
 
     "clock": {
         "format": "{:%H:%M}",
-        "format-alt": "{:%H:%M %d.%m.%Y}",
+        "format-alt": "{:%d.%m.%Y}",
         "tooltip": false,
         "interval": 1
-    }
+    },
 }
