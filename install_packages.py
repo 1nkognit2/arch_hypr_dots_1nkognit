@@ -32,7 +32,7 @@ pacman = [
     'fastfetch',
     'xdg-desktop-portal',
     'xdg-desktop-portal-gtk',
-    'dunst',
+    'swaync',
     'pipewire',
     'pipewire-pulse',
     'wireplumber',

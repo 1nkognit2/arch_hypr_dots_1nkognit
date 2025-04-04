@@ -1,6 +1,6 @@
 @import "$HOME/.cache/wal/colors-universal.css";
 
-@define-color text rgba(255,255,255,0.7);
+@define-color text rgba(255,255,255,1);
 @define-color accent @color1;
 
 * {
@@ -28,7 +28,7 @@ window#waybar {
 #memory,
 #battery,
 #network,
-#custom-dunst-toggle,
+#custom-swaync,
 #pulseaudio {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
@@ -73,4 +73,8 @@ window#waybar {
 
 #workspaces button:hover {
     background: @accent;
+}
+
+#custom-swaync {
+    padding: 0px 12px 0px 9px;
 }

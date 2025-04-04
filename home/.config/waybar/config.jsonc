@@ -18,9 +18,9 @@
 
     "modules-right": [
         "tray",
-        "pulseaudio",
         "network",
-        "custom/dunst-toggle",
+        "custom/swaync",
+        "pulseaudio",
         "clock"
     ],
 
@@ -63,4 +63,10 @@
         "tooltip": false,
         "interval": 1
     },
+
+    "custom/swaync": {
+        "format": "",
+        "on-click": "swaync-client -t",
+        "on-click-right": "swaync-client -c -sw"
+    }
 }

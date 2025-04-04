@@ -15,7 +15,7 @@ sleep 1
 echo ""
 
 echo "    Installing python"
-sudo pacman -S --noconfirm python python-colorama
+sudo pacman -S --noconfirm python
 echo "    Python installed"
 sleep 1
 echo ""
