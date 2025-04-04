@@ -32,14 +32,19 @@ pacman = [
     'fastfetch',
     'xdg-desktop-portal',
     'xdg-desktop-portal-gtk',
-    'swaync',
+    'dunst',
     'pipewire',
     'pipewire-pulse',
     'wireplumber',
     'xdg-desktop-portal-hyprland',
     'iwd',
     'networkmanager',
-    'network-manager-applet'
+    'network-manager-applet',
+    'gnome-music',
+    'gnome-clocks',
+    'eog',
+    'gnome-clocks',
+    'gnome-system-monitor'
 ]
 
 aur = [
