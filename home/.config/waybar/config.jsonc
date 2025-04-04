@@ -1,0 +1,66 @@
+{
+    "layer": "top",
+    "spacing": 0,
+    "height": 48,
+
+    "margin-top": 0,
+    "margin-right": 12,
+    "margin-bottom": 0,
+    "margin-left": 12,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+    
+    ],
+
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "network",
+        "custom/dunst-toggle",
+        "clock"
+    ],
+
+    "hyprland/workspaces" : {
+        "on-click": "activate",
+        "all-outputs": true,
+        "format": "{}",
+        "persistent-workspaces": {
+            "*": 1
+        }
+    },
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+    
+    "pulseaudio": {
+        "scroll-step": 1,
+        "max-volume": 150,
+        "format": "󰕾  {volume}%",
+        "format-bluetooth": "󰕾  {volume}%",
+        "nospacing": 1,
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+    
+    "network": {
+        "format-wifi": "󰖩",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰖪",
+        "interval": 1,
+        "tooltip": false,
+        "on-click": "nm-connection-editor"
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%d.%m.%Y}",
+        "tooltip": false,
+        "interval": 1
+    },
+}

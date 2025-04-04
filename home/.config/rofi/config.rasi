@@ -1,0 +1,17 @@
+configuration {
+    modi:                       "drun,filebrowser,window,run";
+    font:                       "Fira Sans 11";
+    show-icons:                 true;
+    display-drun:                "󱂬 ";
+    display-filebrowser:         "  ";
+    display-window:              "  ";
+	drun-display-format:        "{name}";
+    hover-select:               false;
+    scroll-method:              1;
+    me-select-entry:            "";
+    me-accept-entry:            "MousePrimary";
+    window-format:              "{w} · {c} · {t}";
+    
+}
+
+@theme "~/.config/rofi/themes/rounded-nord-dark.rasi"
