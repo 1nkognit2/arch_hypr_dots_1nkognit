@@ -67,6 +67,7 @@
     "custom/swaync": {
         "format": "",
         "on-click": "swaync-client -t",
+        "tooltip": false,
         "on-click-right": "swaync-client -c -sw"
     }
 }
