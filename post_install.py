@@ -12,7 +12,6 @@ multilib_conf = '/etc/pacman.conf'
 
 
 # Waybar config
-
 if not os.access(waybar_css, os.R_OK | os.W_OK):
     os.system(f'sudo chown $USER:$USER {waybar_css} && chmod 644 {waybar_css}')
 
@@ -26,7 +25,6 @@ file.close()
 
 
 # Walpaper set
-
 image = f'{home}/Wallpapers/wallpaper.jpg'
 
 os.system(f'wal -i {image}')
@@ -41,7 +39,6 @@ file.close()
 
 
 # Multilib enable
-
 try:
     if not os.access(multilib_conf, os.R_OK | os.W_OK):
         os.system(f'sudo chown $USER:$USER {multilib_conf} && chmod 644 {multilib_conf}')
