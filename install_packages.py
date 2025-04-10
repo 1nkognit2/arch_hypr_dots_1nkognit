@@ -17,6 +17,9 @@ pacman = [
     'gnome-calculator',
     'gnome-disk-utility',
     'gnome-text-editor',
+    'gnome-system-monitor',
+    'gnome-music',
+    'eog',
     'waybar',
     'cliphist',
     'wl-clipboard',
@@ -39,12 +42,7 @@ pacman = [
     'xdg-desktop-portal-hyprland',
     'iwd',
     'networkmanager',
-    'network-manager-applet',
-    'gnome-music',
-    'gnome-clocks',
-    'eog',
-    'gnome-clocks',
-    'gnome-system-monitor'
+    'network-manager-applet'
 ]
 
 aur = [
