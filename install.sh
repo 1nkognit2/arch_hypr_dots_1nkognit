@@ -1,6 +1,6 @@
 script_dir=$(dirname "$(realpath "$0")")
 
-echo "~~~INSTALL SCRIPT~~~"
+echo "     INSTALL SCRIPT"
 sleep 1
 
 echo "    Installing paru"
