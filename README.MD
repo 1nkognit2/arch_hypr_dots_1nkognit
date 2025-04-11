@@ -11,7 +11,10 @@ sudo pacman -S git
 ## 2. Сlone dotfiles repository
 ```
 git clone https://github.com/147888sf/arch_hypr_dots.git
-# Or, if you want to, clone development branch (may be very unstable, not always exists, only use if you know what you doing)
+```
+
+Or, if you want to, clone development branch (may be very unstable, not always exists, only use if you know what you doing)
+```
 git clone --branch dev https://github.com/147888sf/arch_hypr_dots.git
 ```
 
@@ -28,4 +31,4 @@ hyprland
 
 Done!
 
-Have any feedback/issues? Contact dots developer on discord: @vova_4104
+Have any feedback/issues? Want to be a beta tester? Contact developer on discord: @vova_4104
