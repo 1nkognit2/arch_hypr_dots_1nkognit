@@ -12,14 +12,14 @@
     min-height: 0;
     font-family: "JetBrainsMono Nerd";
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     padding: 0;
     background-clip: padding-box;
 }
 
 window#waybar {
     background: rgba(0,0,0,0.1);
-    border-radius: 0px 0px 16px 16px;
+    border-radius: 0px 0px 14px 14px;
 }
 
 #clock,
