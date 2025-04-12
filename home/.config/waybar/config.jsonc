@@ -9,11 +9,11 @@
     "margin-left": 12,
 
     "modules-left": [
-        "hyprland/workspaces"
+        
     ],
 
     "modules-center": [
-    
+        "hyprland/workspaces"
     ],
 
     "modules-right": [
