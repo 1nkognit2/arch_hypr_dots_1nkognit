@@ -31,6 +31,8 @@ packages = {
         'celluloid',
         'pavucontrol',
         'noto-fonts',
+        'noto-fonts-emoji',
+        'ttf-liberation',
         'ttf-jetbrains-mono',
         'ttf-jetbrains-mono-nerd',
         'fastfetch',
