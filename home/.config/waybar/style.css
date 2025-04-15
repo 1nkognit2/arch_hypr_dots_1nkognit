@@ -53,6 +53,9 @@ window#waybar {
     color: @text;
 }
 
+#language {
+    min-width: 30px;
+}
 
 #workspaces {
     margin: 6px 0px 6px 6px;
