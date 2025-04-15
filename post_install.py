@@ -26,7 +26,7 @@ file.close()
 
 
 # Walpaper set
-image = f'{home}/Wallpapers/wallpapers.jpg'
+image = f'{home}/Wallpapers/wallpaper.jpg'
 
 os.system(f'wal -i {image}')
 
