@@ -18,6 +18,7 @@
 
     "modules-right": [
         "tray",
+        "hyprland/language",
         "network",
         "custom/swaync",
         "pulseaudio",
@@ -31,6 +32,12 @@
         "persistent-workspaces": {
             "*": 1
         }
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-ru": "RU"
     },
 
     "tray": {
