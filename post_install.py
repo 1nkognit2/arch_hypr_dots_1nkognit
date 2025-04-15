@@ -6,7 +6,7 @@ file_dir = pathlib.Path(__file__).parent.resolve()
 home = os.getenv("HOME")
 
 waybar_css = f'{home}/.config/waybar/style.css'
-hyprpaper_conf = f'{home}/.config/hypr/hyprpaper.conf'
+wallpapers_conf = f'{home}/.config/hypr/wallpapers.conf'
 multilib_conf = '/etc/pacman.conf'
 
 
@@ -29,11 +29,11 @@ image = f'{home}/Wallpapers/wallpaper.jpg'
 
 os.system(f'wal -i {image}')
 
-if not os.access(hyprpaper_conf, os.R_OK | os.W_OK):
-    os.system(f'sudo chown $USER:$USER {hyprpaper_conf} && chmod 644 {hyprpaper_conf}')
+if not os.access(wallpapers_conf, os.R_OK | os.W_OK):
+    os.system(f'sudo chown $USER:$USER {wallpapers_conf} && chmod 644 {wallpapers_conf}')
 
-file = open(hyprpaper_conf,'wb')
-file.write(f'preload = {image}\nwallpaper = ,{image}'.encode())
+file = open(wallpapers_conf,'wb')
+file.write(f'$wallpaper = {image}'.encode())
 file.close()
 
 
