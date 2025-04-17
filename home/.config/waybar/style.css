@@ -18,7 +18,7 @@
 }
 
 window#waybar {
-    background: rgba(0,0,0,0.15);
+    background: rgba(0,0,0,0.4);
     border-radius: 0px 0px 14px 14px;
 }
 
@@ -39,12 +39,8 @@ window#waybar {
     color: @text;
 }
 
-#network {
-    margin: 6px 6px 6px 0px;
-    padding: 0px 13px 0px 10px;
-    background-color: @accent;
-    border-radius: 8px;
-    color: @text;
+#language {
+    min-width: 30px;
 }
 
 #window {
@@ -53,13 +49,12 @@ window#waybar {
     color: @text;
 }
 
-#language {
-    min-width: 30px;
-}
 
 #workspaces {
     margin: 6px 0px 6px 6px;
-    background: transparent;
+    padding: 2px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
 }
 
 #workspaces button {
@@ -73,13 +68,32 @@ window#waybar {
 
 #workspaces button.active {
     background: @accent;
-    min-width: 50px; /* 2:1 aspect ratio */
+    min-width: 72px;
 }
 
 #workspaces button:hover {
     background: @accent;
 }
 
+#language {
+    border-radius: 8px 0px 0px 8px;
+    margin-right: 0px;
+}
+
+#network {
+    margin: 6px 0px 6px 0px;
+    padding: 0px 13px 0px 10px;
+    border-radius: 0px;
+    background-color: @accent;
+    color: @text;
+}
+
 #custom-swaync {
+    margin-right: 0px;
     padding: 0px 12px 0px 9px;
+    border-radius: 0px;
+}
+
+#pulseaudio {
+    border-radius: 0px 8px 8px 0px;
 }
