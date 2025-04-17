@@ -86,14 +86,17 @@ window#waybar {
     border-radius: 0px;
     background-color: @accent;
     color: @text;
+    padding-left: 0px;
 }
 
 #custom-swaync {
     margin-right: 0px;
     padding: 0px 12px 0px 9px;
     border-radius: 0px;
+    padding-left: 0px;
 }
 
 #pulseaudio {
     border-radius: 0px 8px 8px 0px;
+    padding-left: 0px;
 }
