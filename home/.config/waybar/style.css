@@ -39,10 +39,6 @@ window#waybar {
     color: @text;
 }
 
-#language {
-    min-width: 30px;
-}
-
 #window {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
@@ -62,17 +58,18 @@ window#waybar {
     margin: 4px 3px;
     background: transparent;
     color: @text;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.25s ease-out;
     border-radius: 8px;
+}
+
+#workspaces button:hover {
+    background: @accent;
+    min-width: 48px;
 }
 
 #workspaces button.active {
     background: @accent;
     min-width: 72px;
-}
-
-#workspaces button:hover {
-    background: @accent;
 }
 
 #language {
