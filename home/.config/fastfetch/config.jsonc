@@ -9,43 +9,43 @@
     "modules": [
 	{
             "type": "title",
-            "keyWidth": 10
+            "keyWidth": 10,
         },
         "break",
         {
             "type": "os",
             "key": "  ",
-            "keyColor": "33",  // = color3
+            "keyColor": "34",
         },
         {
             "type": "kernel",
             "key": "  ",
-            "keyColor": "33",
+            "keyColor": "34",
         },
         {
             "type": "packages",
             "key": "  ",
-            "keyColor": "33",  
+            "keyColor": "34",  
         },
         {
             "type": "shell",
             "key": "  ",
-            "keyColor": "33", 
+            "keyColor": "34", 
         },
         {
             "type": "terminal",
             "key": "  ",
-            "keyColor": "33", 
+            "keyColor": "34", 
         },
         {
             "type": "wm",
             "key": "  ",
-            "keyColor": "33", 
+            "keyColor": "34", 
         },
         {
             "type": "uptime",
             "key": "  ",
-            "keyColor": "33", 
+            "keyColor": "34", 
         }
     ]
 }
