@@ -72,6 +72,14 @@ os.system('sudo systemctl enable NetworkManager.service')
 
 
 
+# Default dark mode
+os.system("gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark")
+os.system("gsettings set org.gnome.desktop.interface color-scheme prefer-dark")
+os.system("gsettings set org.gnome.desktop.interface icon-theme Papirus")
+os.system("gsettings set org.gnome.desktop.interface font-name 'Noto Sans Regular 11'")
+
+
+
 # Reboot
 dialog = input('Reboot? (recomended) [Y/n]: ')
 if dialog == '' or dialog.lower() == 'y':
