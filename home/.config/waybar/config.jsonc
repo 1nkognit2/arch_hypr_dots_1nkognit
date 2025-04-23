@@ -21,9 +21,27 @@
         "hyprland/language",
         "network",
         "custom/swaync",
+        "battery",
         "pulseaudio",
         "clock"
     ],
+    
+    "battery": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": ["", "", "", "", ""],
+            "charging": [""]
+        },
+        
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        
+        "tooltip-format": "Battery: {capacity}% ({time})",
+        "interval": 1,
+        "max-length": 25
+    },
 
     "hyprland/workspaces" : {
         "on-click": "activate",
