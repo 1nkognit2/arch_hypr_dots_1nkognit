@@ -32,7 +32,6 @@ hyprland
 Done!
 
 # Compatibility
-
 This dotfiles must work properly with dekstop and laptop devices. The waybar config is configured to indicate batery charge.
 
 
@@ -40,6 +39,7 @@ This dotfiles must work properly with dekstop and laptop devices. The waybar con
 # Screenshots
 ![Screenshot #1](https://i.imgur.com/Ra2nIzd.jpeg)
 ![Screenshot #2](https://i.imgur.com/UcyQ1Lw.jpeg)
+<hr>
 
 
 
