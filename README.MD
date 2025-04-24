@@ -41,6 +41,4 @@ This dotfiles must work properly with dekstop and laptop devices. The waybar con
 ![Screenshot #2](https://i.imgur.com/UcyQ1Lw.jpeg)
 <hr>
 
-
-
 ### Need help? Have any feedback/issues? Want to be a beta tester? Contact developer on discord: @vova_4104
