@@ -43,4 +43,4 @@ This dotfiles must work properly with dekstop and laptop devices. The waybar con
 
 
 
-Need help? p Have any feedback/issues? Want to be a beta tester? Contact developer on discord: @vova_4104
+### Need help? Have any feedback/issues? Want to be a beta tester? Contact developer on discord: @vova_4104
