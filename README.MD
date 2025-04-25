@@ -1,6 +1,6 @@
 ## 1. Install Git
 ```
-# Arch linux
+
 sudo pacman -S git
 ```
 
