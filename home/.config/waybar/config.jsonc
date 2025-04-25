@@ -1,50 +1,33 @@
 {
+    "output": "HDMI-A-1", 
     "layer": "top",
+    "position": "top",
     "spacing": 0,
-    "height": 48,
-
+    "height": 20,
+    
     "margin-top": 0,
-    "margin-right": 12,
+    "margin-right": 0,
     "margin-bottom": 0,
-    "margin-left": 12,
-
+    "margin-left": 0,
+    
     "modules-left": [
-        
+        "hyprland/workspaces"     
     ],
 
     "modules-center": [
-        "hyprland/workspaces"
+        "cpu",
+        "memory"
     ],
 
     "modules-right": [
         "tray",
         "hyprland/language",
-        "network",
         "custom/swaync",
-        "battery",
         "pulseaudio",
-        "clock"
+        "clock"    
     ],
-    
-    "battery": {
-        "format": "{icon}",
-        "format-icons": {
-            "default": ["", "", "", "", ""],
-            "charging": [""]
-        },
-        
-        "states": {
-            "warning": 20,
-            "critical": 10
-        },
-        
-        "tooltip-format": "Battery: {capacity}% ({time})",
-        "interval": 1,
-        "max-length": 25
-    },
 
     "hyprland/workspaces" : {
-        "on-click": "activate",
         "all-outputs": true,
         "format": "{}",
         "persistent-workspaces": {
@@ -59,40 +42,42 @@
     },
 
     "tray": {
+        "tooltip": false,
         "spacing": 10,
-        "tooltip": false
+        "icon-size": 15
     },
     
     "pulseaudio": {
+        "tooltip": false,
         "scroll-step": 1,
         "max-volume": 150,
         "format": "    {volume}%",
-        "format-bluetooth": "    {volume}%",
-        "nospacing": 1,
-        "on-click": "pavucontrol",
-        "tooltip": false
-    },
-    
-    "network": {
-        "format-wifi": "󰖩",
-        "format-ethernet": "󰈀",
-        "format-disconnected": "󰖪",
-        "interval": 1,
-        "tooltip": false,
-        "on-click": "nm-connection-editor"
+        "on-click": "pavucontrol"
     },
 
     "clock": {
-        "format": "{:%H:%M}",
-        "format-alt": "{:%H:%M  %d.%m.%Y}",
         "tooltip": false,
-        "interval": 1
+        "format": "{:%H:%M}",
+        "format-alt": "{:%d.%m.%Y}",
+        "interval": 60
     },
 
     "custom/swaync": {
+        "tooltip": false,
         "format": "",
         "on-click": "swaync-client -t",
-        "tooltip": false,
         "on-click-right": "swaync-client -c -sw"
+    },
+    
+    "cpu": {
+        "tooltip": false,
+        "format": "  {usage}%",
+        "interval": 1
+    },
+    
+    "memory": {
+        "tooltip": false,
+        "format": "   {used:0.1f}G",
+        "interval": 1
     }
 }

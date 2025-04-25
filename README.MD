@@ -26,7 +26,7 @@ bash install.sh # starting installer bash script
 
 ## 4. Start hyprland
 ```
-hyprland
+Hyprland
 ```
 
 Done!
