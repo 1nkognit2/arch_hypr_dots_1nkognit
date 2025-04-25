@@ -1,6 +1,5 @@
 ## 1. Install Git
 ```
-
 sudo pacman -S git
 ```
 
