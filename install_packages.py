@@ -43,7 +43,7 @@ packages = {
         'pipewire-pulse',
         'wireplumber',
         'iwd',
-        'solaar'
+        'solaar',
         'discord',
         'telegram-desktop',
         'networkmanager',
