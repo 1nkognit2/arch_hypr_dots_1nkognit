@@ -17,7 +17,6 @@ packages = {
         'nano',
         'flatpak',
         'nautilus',
-        'vim',
         'gnome-calculator',
         'gnome-disk-utility',
         'gnome-text-editor',
@@ -44,6 +43,8 @@ packages = {
         'pipewire-pulse',
         'wireplumber',
         'iwd',
+        'discord',
+        'telegram-desktop',
         'networkmanager',
         'network-manager-applet'
     ],
