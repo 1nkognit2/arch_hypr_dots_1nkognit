@@ -83,4 +83,4 @@ os.system("gsettings set org.gnome.desktop.interface font-name 'Noto Sans Regula
 # Reboot
 dialog = input('Reboot? (recomended) [Y/n]: ')
 if dialog == '' or dialog.lower() == 'y':
-    os.system('sudo reboot')
+    os.system('reboot')

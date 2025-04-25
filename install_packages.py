@@ -60,9 +60,9 @@ packages = {
     ]
 }
 
-dialog = input('Install Nvidia drivers? [Y/n] ')
+dialog = input('Install Nvidia drivers? [y/N] ')
 
-if dialog.lower() == 'y' or dialog == '':
+if dialog.lower() == 'y':
     drivers = {
         'Pacman': [
             'nvidia',

@@ -3,7 +3,7 @@ import pathlib
 import shutil
 
 file_dir = pathlib.Path(__file__).parent.resolve()
-home = pathlib.Path(os.getenv('HOME')).resolve()
+home = pathlib.Path(os.path.expanduser('~')).resolve()
 source_dir = file_dir / 'home'
 
 def copy_with_replace(src, dst):
