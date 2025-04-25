@@ -11,7 +11,7 @@ git clone https://github.com/1nkognit2/arch_hypr_dots_1nkognit.git
 
 ## 3. Run install.sh bash script
 ```
-cd arch_hypr_dots # moving into dotfiles dir
+cd arch_hypr_dots_1nkognit # moving into dotfiles dir
 bash install.sh # starting installer bash script
 ```
 
