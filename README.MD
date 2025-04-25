@@ -1,6 +1,4 @@
-> IN VERY DEEP DEVELOPMENT! IT IS NOT WELL TESTED, AND MAY HAVE A LOT OF BUGS
-
-# How to install
+How to install
 
 ## 1. Install Git
 ```
@@ -24,12 +22,7 @@ bash install.sh # starting installer bash script
 Hyprland
 ```
 
-Done!
-
-# Compatibility
-This dotfiles must work properly with dekstop and laptop devices. The waybar config is configured to indicate batery charge.
 
 <hr>
 
-Feel free to make forks & pull request anything you want to see in this project
-Need help? Have any feedback/issues? Want to be a beta tester? Want to suggest a feature? Contact developer on discord: @vova_4104
+Contact developer on discord: @vova_4104
