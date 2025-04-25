@@ -1,4 +1,4 @@
-> IN VERY DEEP DEVELOPMENT! IT IS NOT WELL TESTED, AND MAY HAVE A LOT OF BUGS
+> WIP but works well. Report any bugs.
 
 # How to install
 
