@@ -1,7 +1,8 @@
 @import "$HOME/.cache/wal/colors-universal.css";
 
-@define-color text rgba(255,255,255,1);
-@define-color accent @color1;
+@define-color text   rgba(255,255,255,1);
+@define-color accent rgba(46,46,50,1);
+
 
 * {
     outline: none;
@@ -11,96 +12,49 @@
     border-radius: 0;
     min-height: 0;
     font-family: "JetBrainsMono Nerd";
-    font-weight: 700;
-    font-size: 16px;
-    padding: 0;
+    font-weight: 600;
+    font-size: 15px;
     background-clip: padding-box;
 }
 
+
 window#waybar {
     background: rgba(0,0,0,0.4);
-    border-radius: 0px 0px 14px 14px;
 }
-
-#clock,
-#tray,
 #cpu,
 #memory,
-#battery,
+#custom-power,
+#clock,
+#tray,
 #network,
 #custom-swaync,
 #language,
 #pulseaudio {
-    margin: 6px 6px 6px 0px;
-    padding: 2px 8px;
-    min-width: 12px;
+    margin: 4px 4px 4px 0px;
+    padding: 2px 7px;
     background-color: @accent;
-    border-radius: 8px;
-    color: @text;
+    border-radius: 6px;
 }
-
-#window {
-    margin: 6px 6px 6px 0px;
-    padding: 2px 8px;
-    color: @text;
-}
-
 
 #workspaces {
-    margin: 6px 0px 6px 6px;
-    padding: 2px;
-    background: rgba(0,0,0,0.3);
-    border-radius: 12px;
+    margin: 5px 0px 5px 6px;
+    background: transparent;
 }
 
 #workspaces button {
-    padding: 0px 4px;
-    margin: 4px 3px;
+    padding: 1px 10px 1px;
     background: transparent;
-    color: @text;
-    transition: all 0.25s ease-out;
-    border-radius: 8px;
-}
-
-#workspaces button:hover {
-    background: @accent;
-    min-width: 48px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
 }
 
 #workspaces button.active {
     background: @accent;
-    min-width: 72px;
+    min-width: 40px;
 }
 
-#language {
-    border-radius: 8px 0px 0px 8px;
-    margin-right: 0px;
-}
-
-#network {
-    margin: 6px 0px 6px 0px;
-    padding: 0px 13px 0px 10px;
-    border-radius: 0px;
-    background-color: @accent;
-    color: @text;
-    padding-left: 0px;
-}
 
 #custom-swaync {
-    margin-right: 0px;
-    padding: 0px 12px 0px 9px;
-    border-radius: 0px;
-    padding-left: 0px;
+    padding: 1px 11px 0px 8px;
 }
 
-#battery {
-    border-radius: 0px;
-    padding-left: 0px;
-    padding-right: 15px;
-    margin-right: 0px;
-}
-
-#pulseaudio {
-    border-radius: 0px 8px 8px 0px;
-    padding-left: 0px;
-}
