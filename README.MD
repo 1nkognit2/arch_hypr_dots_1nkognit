@@ -1,5 +1,3 @@
-How to install
-
 ## 1. Install Git
 ```
 # Arch linux
