@@ -54,12 +54,12 @@ packages = {
     ],
 
     'Aur': [
-        'hyprshot',
-        'oh-my-posh',
+        'hyprshot-bin',
+        'oh-my-posh-bin',
         'pinta',
         'nwg-look',
         'papirus-icon-theme',
-        'bibata-cursor-theme'
+        'bibata-cursor-theme-bin'
     ]
 }
 
@@ -84,4 +84,5 @@ pacman_parsed = ' '.join(packages['Pacman'])
 aur_parsed = ' '.join(packages['Aur'])
 
 os.system(f'sudo pacman -S --noconfirm --needed {pacman_parsed}')
+os.system(f'paru -Sy')
 os.system(f'paru -S --noconfirm {aur_parsed}')
