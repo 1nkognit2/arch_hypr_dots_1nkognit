@@ -1,4 +1,4 @@
-> WIP but works well. Report any bugs.
+> This project is WIP but must work well. Report any bugs.
 
 # Installation 
 
@@ -30,8 +30,6 @@ bash install.sh # starting installer bash script
 ```
 hyprland
 ```
-
-Done!
 
 # Compatibility
 ### Device type
