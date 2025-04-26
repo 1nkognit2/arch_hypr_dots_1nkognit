@@ -2,7 +2,7 @@
 /* Author: Newman Sanchez (https://github.com/newmanls) */
 
 * {
-    font:   "Roboto 12";
+    font:   "Noto Sans 11";
 
     background-color:   transparent;
     text-color:         @fg0;
@@ -17,7 +17,8 @@ window {
     y-offset:       calc(50% - 176px);
     width:          480;
     height:  365px;
-    background-color:   @bg0;
+    background-color:   #1D1D20;
+
 }
 
 mainbox {
@@ -25,11 +26,11 @@ mainbox {
 }
 
 inputbar {
-    background-color:   @bg1;
-    border-color:       @bg3;
+    background-color:   #333336;
+    border-color:       #2E2E32;
 
-    border:         2px;
-    border-radius:  16px;
+    border:         0px;
+    border-radius:  8px;
 
     padding:    8px 16px;
     spacing:    8px;
@@ -42,7 +43,7 @@ prompt {
 
 entry {
     placeholder:        "Search";
-    placeholder-color:  @fg3;
+    placeholder-color:  #F7F7F7;
 }
 
 message {
@@ -69,19 +70,19 @@ listview {
 element {
     padding:        8px 16px;
     spacing:        8px;
-    border-radius:  16px;
+    border-radius:  8px;
 }
 
 element normal active {
-    text-color: @bg3;
+    text-color: #FBFBFB;
 }
 
 element alternate active {
-    text-color: @bg3;
+    text-color: #FBFBFB;
 }
 
 element selected normal, element selected active {
-    background-color:   @bg3;
+    background-color:   #444446;
 }
 
 element-icon {
@@ -90,5 +91,5 @@ element-icon {
 }
 
 element-text {
-    text-color: inherit;
+    text-color: #FBFBFB;
 }
