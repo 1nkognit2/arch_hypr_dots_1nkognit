@@ -57,7 +57,7 @@ packages = {
         'hyprshot-bin',
         'oh-my-posh-bin',
         'pinta',
-        'nwg-look-bin',
+        'nwg-look',
         'papirus-icon-theme',
         'bibata-cursor-theme'
     ]
