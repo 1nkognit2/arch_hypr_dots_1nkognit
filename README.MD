@@ -1,14 +1,14 @@
-> IN VERY DEEP DEVELOPMENT! IT IS NOT WELL TESTED, AND MAY HAVE A LOT OF BUGS
+> WIP but works well. Report any bugs.
 
-# How to install
+# Installation 
 
-## 1. Install Git
+### 1. Install Git
 ```
 # Arch linux
 sudo pacman -S git
 ```
 
-## 2. Сlone dotfiles repository
+### 2. Сlone dotfiles repository
 ```
 git clone https://github.com/147888sf/arch_hypr_dots.git
 ```
@@ -18,13 +18,13 @@ Or, if you want to, clone development branch (may be very unstable, not always e
 git clone --branch dev https://github.com/147888sf/arch_hypr_dots.git
 ```
 
-## 3. Run install.sh bash script
+### 3. Run install.sh bash script
 ```
 cd arch_hypr_dots # moving into dotfiles dir
 bash install.sh # starting installer bash script
 ```
 
-## 4. Start hyprland
+### 4. Start hyprland
 ```
 hyprland
 ```
@@ -32,7 +32,7 @@ hyprland
 Done!
 
 # Compatibility
-This dotfiles must work properly with dekstop and laptop devices. The waybar config is configured to indicate batery charge.
+This dotfiles must work properly with both dekstops and laptops.
 
 
 
