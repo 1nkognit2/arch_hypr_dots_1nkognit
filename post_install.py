@@ -63,7 +63,7 @@ except:
 
 
 # Screenshare
-os.system('systemctl --user enable --now pipewire pipewire-pulse wireplumber')
+os.system('sudo systemctl --user enable --now pipewire pipewire-pulse wireplumber')
 
 
 
