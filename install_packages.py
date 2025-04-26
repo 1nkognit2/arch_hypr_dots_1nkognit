@@ -54,8 +54,8 @@ packages = {
     ],
 
     'Aur': [
-        'hyprshot-bin',
-        'oh-my-posh-bin',
+        'hyprshot',
+        'oh-my-posh',
         'pinta',
         'nwg-look',
         'papirus-icon-theme',
