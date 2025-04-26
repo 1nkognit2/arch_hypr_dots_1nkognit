@@ -47,21 +47,25 @@ packages = {
         'discord',
         'telegram-desktop',
         'networkmanager',
-        'network-manager-applet'
+        'network-manager-applet',
+        'ntfs-3g',
+        'dosfstools',
+        'fuse'
     ],
 
     'Aur': [
-        'hyprshot',
+        'hyprshot-bin',
         'oh-my-posh-bin',
-        'nwg-look',
+        'pinta',
+        'nwg-look-bin',
         'papirus-icon-theme',
         'bibata-cursor-theme'
     ]
 }
 
-dialog = input('Install Nvidia drivers? [Y/n] ')
+dialog = input('Install Nvidia drivers? [y/N] ')
 
-if dialog.lower() == 'y' or dialog == '':
+if dialog.lower() == 'y':
     drivers = {
         'Pacman': [
             'nvidia',
