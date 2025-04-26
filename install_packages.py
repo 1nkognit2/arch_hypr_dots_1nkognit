@@ -54,10 +54,10 @@ packages = {
     ],
 
     'Aur': [
-        'hyprshot',
+        'hyprshot-bin',
         'oh-my-posh-bin',
         'pinta',
-        'nwg-look',
+        'nwg-look-bin',
         'papirus-icon-theme',
         'bibata-cursor-theme'
     ]

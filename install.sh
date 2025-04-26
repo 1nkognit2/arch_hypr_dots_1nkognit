@@ -13,11 +13,11 @@ PID=$!
 sleep 1
 
 cd ~
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
+git clone --depth 1 https://aur.archlinux.org/paru-bin.git
+cd paru-bin
+makepkg -si --noconfirm
 cd ~
-sudo rm -rf paru
+sudo rm -rf paru-bin
 sleep 1
 
 sudo pacman -S --noconfirm python
