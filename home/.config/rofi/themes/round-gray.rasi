@@ -19,7 +19,7 @@ window {
     location:       north;
     y-offset:       calc(50% - 176px);
     width:          480;
-    height:  458px;
+    height:  382px;
     background-color:   @bg0;
 }
 
