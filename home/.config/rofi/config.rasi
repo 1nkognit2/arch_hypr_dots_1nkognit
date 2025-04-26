@@ -1,6 +1,6 @@
 configuration {
     modi:                       "drun,filebrowser,window,run";
-    font:                       "Fira Sans 11";
+    font:                       "Noto Sans 11";
     show-icons:                 true;
     display-drun:                "󱂬 ";
     display-filebrowser:         "  ";
@@ -14,4 +14,4 @@ configuration {
     
 }
 
-@theme "~/.config/rofi/themes/rounded-nord-dark.rasi"
+@theme "~/.config/rofi/themes/round-gray.rasi"
