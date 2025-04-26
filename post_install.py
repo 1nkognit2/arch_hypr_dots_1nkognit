@@ -63,7 +63,7 @@ except:
 
 
 # Screenshare
-os.system('systemctl --user enable --now pipewire pipewire-pulse wireplumber')
+os.system('sudo systemctl --user enable --now pipewire pipewire-pulse wireplumber')
 
 
 
@@ -83,4 +83,4 @@ os.system("gsettings set org.gnome.desktop.interface font-name 'Noto Sans Regula
 # Reboot
 dialog = input('Reboot? (recomended) [Y/n]: ')
 if dialog == '' or dialog.lower() == 'y':
-    os.system('reboot')
+    os.system('sudo reboot')

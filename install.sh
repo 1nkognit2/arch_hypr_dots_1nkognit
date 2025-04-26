@@ -23,8 +23,6 @@ sleep 1
 sudo pacman -S --noconfirm python
 sleep 1
 
-sudo python "$script_dir/install_packages.py"
+python "$script_dir/install_packages.py"
 python "$script_dir/install_homefiles.py"
-sudo python "$script_dir/post_install.py"
-
-kill $PID
+python "$script_dir/post_install.py"
