@@ -2,6 +2,8 @@
 
 # Installation 
 
+> Installation can take from 15 to 40 minutes
+
 ### 1. Install Git
 ```
 # Arch linux
@@ -32,7 +34,13 @@ hyprland
 Done!
 
 # Compatibility
-This dotfiles must work properly with both dekstops and laptops.
+### Device type
+Desktop ✅
+Laptop ✅
+### GPU vendor
+AMD (not tested)
+Nvidia ✅
+Intel (not tested)
 
 
 
