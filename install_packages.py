@@ -58,7 +58,7 @@ packages = {
         'oh-my-posh-bin',
         'nwg-look',
         'papirus-icon-theme',
-        'bibata-cursor-theme-bin'
+        'bibata-cursor-theme'
     ]
 }
 
