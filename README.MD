@@ -35,12 +35,12 @@ Done!
 
 # Compatibility
 ### Device type
-Desktop ✅
-Laptop ✅
+- Desktop ✅
+- Laptop ✅
 ### GPU vendor
-AMD (not tested)
-Nvidia ✅
-Intel (not tested)
+- AMD (not tested)
+- Nvidia ✅
+- Intel (not tested)
 
 
 
