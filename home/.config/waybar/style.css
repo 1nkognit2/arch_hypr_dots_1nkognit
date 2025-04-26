@@ -1,6 +1,6 @@
 @import "$HOME/.cache/wal/colors-universal.css";
 
-@define-color text   rgba(255,255,255,1);
+@define-color text   #C0C0C1;
 @define-color accent rgba(46,46,50,1);
 
 
@@ -33,6 +33,7 @@ window#waybar {
     margin: 4px 4px 4px 0px;
     padding: 2px 7px;
     background-color: @accent;
+    color: @text; 
     border-radius: 6px;
 }
 
@@ -50,6 +51,7 @@ window#waybar {
 
 #workspaces button.active {
     background: @accent;
+    color: @text; 
     min-width: 40px;
 }
 
@@ -57,4 +59,3 @@ window#waybar {
 #custom-swaync {
     padding: 1px 11px 0px 8px;
 }
-
