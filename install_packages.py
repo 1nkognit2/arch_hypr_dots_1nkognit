@@ -47,7 +47,10 @@ packages = {
         'wireplumber',
         'iwd',
         'networkmanager',
-        'network-manager-applet'
+        'network-manager-applet',
+        'ntfs-3g',
+        'dosfstools',
+        'fuse'
     ],
 
     'Aur': [
