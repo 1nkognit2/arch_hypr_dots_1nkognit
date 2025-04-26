@@ -59,7 +59,7 @@ packages = {
         'pinta',
         'nwg-look',
         'papirus-icon-theme',
-        'bibata-cursor-theme'
+        'bibata-cursor-theme-bin'
     ]
 }
 
