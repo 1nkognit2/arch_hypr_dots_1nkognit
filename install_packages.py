@@ -50,7 +50,9 @@ packages = {
         'network-manager-applet',
         'ntfs-3g',
         'dosfstools',
-        'fuse'
+        'fuse',
+        'nvidia',
+        'nvidia-utils'
     ],
 
     'Aur': [
@@ -61,23 +63,6 @@ packages = {
         'bibata-cursor-theme-bin'
     ]
 }
-
-dialog = input('Install Nvidia drivers? [y/N] ')
-
-if dialog.lower() == 'y':
-    drivers = {
-        'Pacman': [
-            'nvidia',
-            'nvidia-utils'
-        ],
-
-        'Aur': [
-
-        ]
-    }
-
-    packages['Pacman'] += drivers['Pacman']
-    packages['Aur'] += drivers['Aur']
 
 pacman_parsed = ' '.join(packages['Pacman'])
 aur_parsed = ' '.join(packages['Aur'])
