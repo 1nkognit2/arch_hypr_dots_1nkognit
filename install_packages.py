@@ -14,7 +14,6 @@ packages = {
         'qt6-wayland',
         'gnome-themes-extra',
         'firefox',
-        'go',
         'nano',
         'flatpak',
         'nautilus',
