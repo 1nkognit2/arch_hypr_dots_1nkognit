@@ -51,7 +51,7 @@
         "tooltip": false,
         "scroll-step": 1,
         "max-volume": 150,
-        "format": "    {volume}%",
+        "format": "   {volume}%",
         "on-click": "pavucontrol"
     },
 
