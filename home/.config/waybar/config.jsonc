@@ -48,7 +48,7 @@
         "all-outputs": true,
         "format": "{}",
         "persistent-workspaces": {
-            "*": 1
+            "*": 5
         }
     },
 
@@ -90,7 +90,7 @@
 
     "clock": {
         "format": " {:%H:%M}",
-        "format-alt": "󰸗 {:%a, %B %d, %Y   %R}",
+        "format-alt": "󰸗 {:%a %B %d %Y  %H:%M}",
         "tooltip": false,
         "interval": 1
     },
