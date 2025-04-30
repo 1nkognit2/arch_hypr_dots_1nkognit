@@ -2,7 +2,7 @@
 
 # Installation 
 
-> Installation can take from 15 to 40 minutes (including Arch installation using archinstall)
+> Installation can take from 15 to 40 minutes (from 10 minutes without archinstall)
 
 ### 1. Install Git
 ```
