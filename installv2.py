@@ -123,11 +123,13 @@ packages = {
         'ntfs-3g',
         'dosfstools',
         'fuse',
-        'ufw'
+        'ufw',
+        'grim',
+        'slurp',
+        'swappy'
     ],
 
     'Aur': [
-        'hyprshot',
         'oh-my-posh-bin',
         'pinta',
         'nwg-look',
