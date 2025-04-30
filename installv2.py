@@ -77,7 +77,8 @@ packages = {
         'network-manager-applet',
         'ntfs-3g',
         'dosfstools',
-        'fuse'
+        'fuse',
+        'ufw'
     ],
 
     'Aur': [
