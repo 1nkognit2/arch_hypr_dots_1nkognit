@@ -48,7 +48,7 @@
         "all-outputs": true,
         "format": "{}",
         "persistent-workspaces": {
-            "*": 5
+            "*": 1
         }
     },
 

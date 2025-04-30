@@ -64,12 +64,12 @@ window#waybar {
 
 #workspaces button:hover {
     background: @accent;
-    min-width: 36px;
+    min-width: 48px;
 }
 
 #workspaces button.active {
     background: @accent;
-    min-width: 48px;
+    min-width: 72px;
 }
 
 #network {
