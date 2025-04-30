@@ -32,13 +32,15 @@ hyprland
 ```
 
 # Compatibility
+### Linux distribution
+As for now, this installer is only made for Arch and its derivatives. Support of any other distributions is not planned yet.
 ### Device type
 - Desktop ✅
 - Laptop ✅
 ### GPU vendor
-- AMD (not tested)
+- AMD ✅ (not tested)
 - Nvidia ✅
-- Intel (not tested)
+- Intel ✅ (not tested)
 
 
 

@@ -14,9 +14,54 @@ def dialog(text: str, default_true: bool):
     else:
         return False
 
-do_nvidia_drivers = dialog('Install NVidia drivers?', False)
-do_reboot = dialog('Reboot after install?', True)
+drivers = {
+    'Nvidia': [
+        'nvidia-dkms',
+        'nvidia-utils',
+        'lib32-nvidia-utils',
+        'vulkan-icd-loader',
+        'lib32-vulkan-icd-loader'
+    ],
 
+    'AMD' : [
+        'mesa',
+        'lib32-mesa',
+        'vulkan-radeon',
+        'lib32-vulkan-radeon',
+        'libva-mesa-driver',
+        'lib32-libva-mesa-driver',
+        'mesa-vdpau',
+        'lib32-mesa-vdpau'
+    ],
+
+    'Intel': [
+        'mesa',
+        'lib32-mesa',
+        'vulkan-intel',
+        'lib32-vulkan-intel',
+        'intel-media-sdk',
+        'libva-intel-driver',
+        'lib32-libva-intel-driver'
+    ],
+    
+    'Do not install GPU driver': [
+
+    ]
+}
+
+for i, x in enumerate(drivers):
+    print(f'{i+1}: {x}')
+
+while 1:
+    try:
+        gpu_type = int(input('Enter your GPU manifacturer to install drivers: '))
+        if gpu_type-1 in [i for i, x in enumerate(drivers)]:
+            selected_drivers = drivers[[x for i, x in enumerate(drivers)][gpu_type-1]]
+            break
+    except:
+        pass
+
+do_reboot = dialog('Reboot after install?', True)
 
 
 
@@ -92,22 +137,7 @@ packages = {
     ]
 }
 
-if do_nvidia_drivers:
-    drivers = {
-        'Pacman': [
-            'nvidia',
-            'nvidia-utils'
-        ],
-
-        'Aur': [
-
-        ]
-    }
-
-    print('z')
-
-    packages['Pacman'] += drivers['Pacman']
-    packages['Aur'] += drivers['Aur']
+packages['Pacman'] += selected_drivers
 
 pacman_parsed = ' '.join(packages['Pacman'])
 aur_parsed = ' '.join(packages['Aur'])
@@ -156,18 +186,12 @@ print(r'''
 ''')
 
 file_dir = pathlib.Path(__file__).parent.resolve()
-home = os.getenv("HOME")
+home = os.getenv('HOME')
 
 waybar_css = f'{home}/.config/waybar/style.css'
 wallpapers_conf = f'{home}/.config/hypr/wallpapers.conf'
 hyprpaper_conf = f'{home}/.config/hypr/hyprpaper.conf'
 multilib_conf = '/etc/pacman.conf'
-
-def numtobool(str):
-    if str == '1':
-        return True
-    else:
-        return False
 
 # Waybar config
 if not os.access(waybar_css, os.R_OK | os.W_OK):
