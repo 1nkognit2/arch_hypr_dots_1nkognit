@@ -146,7 +146,8 @@ packages = {
 packages['Pacman'] += selected_drivers
 
 if do_ly_dm:
-    packages['Pacman'].append('ly')
+    ly = ['ly']
+    packages['Pacman'] += ly
 
 pacman_parsed = ' '.join(packages['Pacman'])
 aur_parsed = ' '.join(packages['Aur'])
@@ -279,5 +280,4 @@ if do_ly_dm:
 
 # Reboot
 if do_reboot:
-    print('zzz')
     os.system('sudo reboot')
