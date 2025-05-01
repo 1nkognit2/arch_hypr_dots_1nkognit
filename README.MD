@@ -45,8 +45,14 @@ As for now, this installer is only made for Arch and its derivatives. Support of
 
 
 # Screenshots
-![Screenshot #1](https://i.imgur.com/Ra2nIzd.jpeg)
-![Screenshot #2](https://i.imgur.com/UcyQ1Lw.jpeg)
+![desktop_urban.png](https://images2.imgbox.com/51/f4/JZig00tO_o.png)
+![terminal.png](https://images2.imgbox.com/00/86/92pRyzRm_o.png)
+![rofi.png](https://images2.imgbox.com/fa/ff/VHNY7Sqs_o.png)
+![notification_center.png](https://images2.imgbox.com/f7/2c/cnuaGhwn_o.png)
+![dekstop_forest_fog.png](https://images2.imgbox.com/4b/fa/Ox8Fdp4I_o.png)
+![desktop_forest_snow.png](https://images2.imgbox.com/85/12/L9RrcbHN_o.png)
+![desktop_forest_red.png](https://images2.imgbox.com/aa/cb/pCyCttJa_o.png)
+
 <hr>
 
 Feel free to make forks & pull request anything you want to see in this project.
