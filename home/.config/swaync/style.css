@@ -107,7 +107,7 @@
 
 /* Control center */
 .control-center {
-  background: @noti-bg;
+  background: @noti-bg-opaque;
   margin: 12px;
   color: @text-color;
   border-radius: 12px;
