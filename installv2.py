@@ -127,7 +127,9 @@ packages = {
         'ufw',
         'grim',
         'slurp',
-        'swappy'
+        'swappy',
+        'playerctl',
+        'libnotify'
     ],
 
     'Aur': [
