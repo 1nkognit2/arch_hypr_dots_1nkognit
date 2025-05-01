@@ -61,7 +61,8 @@ while 1:
     except:
         pass
 
-do_reboot = dialog('Reboot after install?', True)
+do_ly_dm = dialog('Do you want to install Ly DM?', True)
+do_reboot = dialog('Do you want to reboot after install?', True)
 
 
 
@@ -143,6 +144,9 @@ packages = {
 }
 
 packages['Pacman'] += selected_drivers
+
+if do_ly_dm:
+    packages['Pacman'].append('ly')
 
 pacman_parsed = ' '.join(packages['Pacman'])
 aur_parsed = ' '.join(packages['Aur'])
@@ -263,6 +267,13 @@ os.system("gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark")
 os.system("gsettings set org.gnome.desktop.interface color-scheme prefer-dark")
 os.system("gsettings set org.gnome.desktop.interface icon-theme Papirus")
 os.system("gsettings set org.gnome.desktop.interface font-name 'Noto Sans Regular 11'")
+
+
+
+# Ly dm
+
+if do_ly_dm:
+    os.system('sudo systemctl enable ly')
 
 
 
