@@ -1,4 +1,4 @@
-> This project is WIP but must work well. Report any bugs.
+> This project is still WIP, but it must work well on any PC.
 
 # Installation 
 
