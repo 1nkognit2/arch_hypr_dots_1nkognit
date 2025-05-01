@@ -107,6 +107,7 @@ packages = {
         'pavucontrol',
         'noto-fonts',
         'noto-fonts-emoji',
+        'noto-fonts-extra'
         'ttf-liberation',
         'ttf-jetbrains-mono',
         'ttf-jetbrains-mono-nerd',
