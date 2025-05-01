@@ -38,7 +38,7 @@ hyprland
 python ~/Scripts/wallpaper-switcher.py
 ```
 
-### 2. Drag & drop wallpaper file (png/jpg/gif/etc, name should have no spaces) 
+### 2. Drag & drop wallpaper file (it should have no spaces in path) 
 
 ### 3. Press enter
 
