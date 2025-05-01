@@ -31,6 +31,17 @@ bash install.sh # starting installer bash script
 hyprland
 ```
 
+# How to change wallpaper
+
+### 1. Run python wallpaper switcher script
+```
+python ~/Scripts/wallpaper-switcher.py
+```
+
+### 2. Drag & drop wallpaper file (png/jpg/gif/etc, name should have no spaces) 
+
+### 3. Press enter
+
 # Compatibility
 ### Linux distribution
 As for now, this installer is only made for Arch and its derivatives. Support of any other distributions is not planned yet.
@@ -41,8 +52,6 @@ As for now, this installer is only made for Arch and its derivatives. Support of
 - AMD ✅ (not tested)
 - Nvidia ✅
 - Intel ✅ (not tested)
-
-
 
 # Screenshots
 ![desktop_urban.png](https://images2.imgbox.com/51/f4/JZig00tO_o.png)
