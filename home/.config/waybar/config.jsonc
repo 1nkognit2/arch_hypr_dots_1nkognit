@@ -19,7 +19,6 @@
     "modules-right": [
         "tray",
         "hyprland/language",
-        "network",
         "custom/swaync",
         "battery",
         "pulseaudio",
