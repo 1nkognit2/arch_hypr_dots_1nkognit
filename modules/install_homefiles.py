@@ -1,7 +1,7 @@
 import pathlib, shutil, os
 
 def install_homefiles():
-	file_dir = pathlib.Path(__file__).parent.resolve()
+	file_dir = pathlib.Path(__file__).parent.parent.resolve()
 	home = pathlib.Path(os.path.expanduser('~')).resolve()
 	source_dir = file_dir / 'home'
 
@@ -22,3 +22,6 @@ def install_homefiles():
 			copy_with_replace(item, home / item.name)
 		
 		shutil.rmtree(source_dir, ignore_errors=True)
+
+if __name__ == '__main__':
+	install_homefiles()
