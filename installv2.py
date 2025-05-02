@@ -138,6 +138,7 @@ packages = {
         'pinta',
         'nwg-look',
         'papirus-icon-theme',
+        'papirus-folders',
         'bibata-cursor-theme-bin',
         'emote'
     ]
