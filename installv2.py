@@ -108,7 +108,7 @@ packages = {
         'pavucontrol',
         'noto-fonts',
         'noto-fonts-emoji',
-        'noto-fonts-extra'
+        'noto-fonts-extra',
         'ttf-liberation',
         'ttf-jetbrains-mono',
         'ttf-jetbrains-mono-nerd',
@@ -146,8 +146,7 @@ packages = {
 packages['Pacman'] += selected_drivers
 
 if do_ly_dm:
-    ly = ['ly']
-    packages['Pacman'] += ly
+    packages['Pacman'].append('ly')
 
 pacman_parsed = ' '.join(packages['Pacman'])
 aur_parsed = ' '.join(packages['Aur'])
