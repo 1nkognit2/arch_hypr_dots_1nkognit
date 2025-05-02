@@ -27,7 +27,6 @@ window#waybar {
 #cpu,
 #memory,
 #battery,
-#network,
 #custom-swaync,
 #language,
 #pulseaudio {
@@ -70,12 +69,6 @@ window#waybar {
 #workspaces button.active {
     background: @accent;
     min-width: 72px;
-}
-
-#network {
-    padding: 0px 13px 0px 10px;
-    background-color: @accent;
-    color: @text;
 }
 
 #custom-swaync {
