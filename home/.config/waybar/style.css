@@ -11,16 +11,9 @@
     text-shadow: none;
     border-radius: 0;
     min-height: 0;
-<<<<<<< HEAD
     font-family: "JetBrainsMono Nerd";
     font-weight: 600;
     font-size: 15px;
-=======
-    font-family: "JetBrains Mono";
-    font-weight: 700;
-    font-size: 16px;
-    padding: 0;
->>>>>>> Z/main
     background-clip: padding-box;
 }
 
@@ -30,14 +23,10 @@ window#waybar {
 }
 #cpu,
 #memory,
-<<<<<<< HEAD
 #custom-power,
 #clock,
 #tray,
 #network,
-=======
-#battery,
->>>>>>> Z/main
 #custom-swaync,
 #language,
 #pulseaudio {
@@ -49,7 +38,6 @@ window#waybar {
 }
 
 #workspaces {
-<<<<<<< HEAD
     margin: 5px 0px 5px 6px;
     background: transparent;
 }
@@ -59,26 +47,6 @@ window#waybar {
     background: transparent;
     transition: all 0.3s ease-in-out;
     border-radius: 6px;
-=======
-    margin: 4px 0px 4px 4px;
-    padding: 2px;
-    background: rgba(0,0,0,0.3);
-    border-radius: 12px;
-}
-
-#workspaces button {
-    padding: 0px 4px;
-    margin: 4px 3px;
-    background: @accent1;
-    color: @text;
-    transition: all 0.25s ease-out;
-    border-radius: 8px;
-}
-
-#workspaces button:hover {
-    background: @accent;
-    min-width: 48px;
->>>>>>> Z/main
 }
 
 #workspaces button.active {
@@ -87,18 +55,7 @@ window#waybar {
     min-width: 40px;
 }
 
-<<<<<<< HEAD
 
 #custom-swaync {
     padding: 1px 11px 0px 8px;
 }
-=======
-#custom-swaync {
-    padding: 0px 12px 0px 9px;
-}
-
-#battery {
-    padding-left: 8px;
-    padding-right: 14px;
-}
->>>>>>> Z/main

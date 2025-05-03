@@ -1,7 +1,4 @@
 * {
-<<<<<<< HEAD:home/.config/rofi/themes/rounded-common.rasi
-    font:   "Noto Sans 11";
-=======
 
     bg0:rgba(37, 39, 45, 0.7); // Main bg
     bg1:rgba(75, 82, 92, 0.25); // Accent
@@ -9,7 +6,6 @@
     fg1:rgba(155, 155, 155, 1); // Search
 	
     font:   "Noto Sans 12";
->>>>>>> Z/main:home/.config/rofi/themes/round-gray.rasi
 
     background-color:   transparent;
     text-color:         @fg0;
@@ -23,14 +19,8 @@ window {
     location:       north;
     y-offset:       calc(50% - 176px);
     width:          480;
-<<<<<<< HEAD:home/.config/rofi/themes/rounded-common.rasi
-    height:  365px;
-    background-color:   #1D1D20;
-
-=======
     height:  382px;
     background-color:   @bg0;
->>>>>>> Z/main:home/.config/rofi/themes/round-gray.rasi
 }
 
 mainbox {
@@ -38,12 +28,7 @@ mainbox {
 }
 
 inputbar {
-<<<<<<< HEAD:home/.config/rofi/themes/rounded-common.rasi
-    background-color:   #333336;
-    border-color:       #2E2E32;
-=======
     border-color:       @bg1;
->>>>>>> Z/main:home/.config/rofi/themes/round-gray.rasi
 
     border:         0px;
     border-radius:  8px;
@@ -59,18 +44,7 @@ prompt {
 
 entry {
     placeholder:        "Search";
-<<<<<<< HEAD:home/.config/rofi/themes/rounded-common.rasi
-    placeholder-color:  #F7F7F7;
-}
-
-message {
-    margin:             12px 0 0;
-    border-radius:      16px;
-    border-color:       @bg2;
-    background-color:   @bg2;
-=======
     placeholder-color:  @fg1;
->>>>>>> Z/main:home/.config/rofi/themes/round-gray.rasi
 }
 
 textbox {
@@ -94,17 +68,6 @@ element {
 }
 
 element normal active {
-<<<<<<< HEAD:home/.config/rofi/themes/rounded-common.rasi
-    text-color: #FBFBFB;
-}
-
-element alternate active {
-    text-color: #FBFBFB;
-}
-
-element selected normal, element selected active {
-    background-color:   #444446;
-=======
     text-color: @bg1;
 }
 
@@ -114,7 +77,6 @@ element alternate active {
 
 element selected normal, element selected active {
     background-color:   @bg1;
->>>>>>> Z/main:home/.config/rofi/themes/round-gray.rasi
 }
 
 element-icon {
@@ -123,9 +85,5 @@ element-icon {
 }
 
 element-text {
-<<<<<<< HEAD:home/.config/rofi/themes/rounded-common.rasi
-    text-color: #FBFBFB;
-=======
     text-color: inherit;
->>>>>>> Z/main:home/.config/rofi/themes/round-gray.rasi
 }

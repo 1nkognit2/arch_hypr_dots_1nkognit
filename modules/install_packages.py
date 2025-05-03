@@ -8,9 +8,7 @@ def install_packages(selected_drivers, do_ly_dm):
 			'hyprland',
 			'xdg-desktop-portal-hyprland',
 			'hyprpicker',
-			'hyprpolkitagent',
 			'hyprpaper',
-			'hyprlock',
 			'qt5-wayland',
 			'qt6-wayland',
 			'gnome-themes-extra',
@@ -18,13 +16,12 @@ def install_packages(selected_drivers, do_ly_dm):
 			'nano',
 			'flatpak',
 			'nautilus',
-			'vim',
+			'polkit-gnome',
 			'gnome-calculator',
 			'gnome-disk-utility',
 			'gnome-text-editor',
 			'gnome-system-monitor',
 			'gnome-music',
-			'eog',
 			'waybar',
 			'cliphist',
 			'wl-clipboard',
@@ -35,7 +32,6 @@ def install_packages(selected_drivers, do_ly_dm):
 			'pavucontrol',
 			'noto-fonts',
 			'noto-fonts-emoji',
-			'noto-fonts-extra',
 			'ttf-liberation',
 			'ttf-jetbrains-mono',
 			'ttf-jetbrains-mono-nerd',
@@ -47,27 +43,24 @@ def install_packages(selected_drivers, do_ly_dm):
 			'pipewire-pulse',
 			'wireplumber',
 			'iwd',
+			'solaar',
+			'discord',
+			'telegram-desktop',
 			'networkmanager',
 			'network-manager-applet',
 			'ntfs-3g',
 			'dosfstools',
 			'fuse',
-			'ufw',
-			'grim',
-			'slurp',
-			'swappy',
-			'playerctl',
-			'libnotify'
+			'nvidia',
+			'nvidia-utils'
 		],
 
 		'Aur': [
+			'hyprshot',
 			'oh-my-posh-bin',
-			'pinta',
 			'nwg-look',
 			'papirus-icon-theme',
-			'papirus-folders',
-			'bibata-cursor-theme-bin',
-			'emote'
+			'bibata-cursor-theme-bin'
 		]
 	}
 

@@ -3,13 +3,8 @@
     "layer": "top",
     "position": "top",
     "spacing": 0,
-<<<<<<< HEAD
     "height": 34,
     
-=======
-    "height": 40,
-
->>>>>>> Z/main
     "margin-top": 0,
     "margin-right": 0,
     "margin-bottom": 0,
@@ -56,39 +51,11 @@
         "tooltip": false,
         "scroll-step": 1,
         "max-volume": 150,
-<<<<<<< HEAD
         "format": "   {volume}%",
         "on-click": "pavucontrol"
     },
 
     "clock": {
-=======
-
-        "format": "{icon}{volume}%",
-        "format-muted": " {volume}%",
-        "format-icons": {
-            "default": ["  ", "  ", "  ", "  "],
-            "muted": ""
-        },
-        "nospacing": 1,
-        "on-click": "pavucontrol",
-        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "tooltip": false
-    },
-    
-    "network": {
-        "format-wifi": "󰖩",
-        "format-ethernet": "󰈀",
-        "format-disconnected": "󰖪",
-        "interval": 1,
-        "tooltip": false,
-        "on-click": "nm-connection-editor"
-    },
-
-    "clock": {
-        "format": " {:%H:%M}",
-        "format-alt": "󰸗 {:%a %B %d %Y  %H:%M}",
->>>>>>> Z/main
         "tooltip": false,
         "format": "{:%H:%M}",
         "format-alt": "{:%d.%m.%Y}",

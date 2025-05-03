@@ -55,17 +55,10 @@ drivers = {
 for i, x in enumerate(drivers):
     print(f'{i+1}: {x}')
 
-while 1:
-    try:
-        gpu_type = int(input('Enter your GPU manifacturer to install drivers: '))
-        if gpu_type-1 in [i for i, x in enumerate(drivers)]:
-            selected_drivers = drivers[[x for i, x in enumerate(drivers)][gpu_type-1]]
-            break
-    except:
-        pass
+selected_drivers = drivers['Nvidia']
 
-do_ly_dm = dialog('Do you want to install Ly DM?', True)
-do_reboot = dialog('Do you want to reboot after install?', True)
+do_ly_dm = False
+do_reboot = True 
 
 
 
