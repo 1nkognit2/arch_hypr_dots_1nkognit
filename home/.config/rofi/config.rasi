@@ -14,4 +14,4 @@ configuration {
     
 }
 
-@theme "~/.config/rofi/themes/rounded-nord-dark.rasi"
+@theme "~/.config/rofi/themes/round-gray.rasi"
