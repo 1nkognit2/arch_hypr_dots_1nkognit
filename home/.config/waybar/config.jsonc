@@ -37,8 +37,8 @@
 
     "hyprland/language": {
         "format": "{}",
-        "format-en": "󰌌 US",
-        "format-ru": "󰌌 RU"
+        "format-en": "US",
+        "format-ru": "RU"
     },
 
     "tray": {
