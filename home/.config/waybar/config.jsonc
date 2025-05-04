@@ -15,8 +15,6 @@
     ],
 
     "modules-center": [
-        "cpu",
-        "memory"
     ],
 
     "modules-right": [
@@ -31,7 +29,7 @@
         "all-outputs": true,
         "format": "{}",
         "persistent-workspaces": {
-            "*": 5
+            "*": 1
         }
     },
 
@@ -63,21 +61,9 @@
     },
 
     "custom/swaync": {
-        "tooltip": false,
+        "tooltip": false, 
         "format": "",
         "on-click": "swaync-client -t",
         "on-click-right": "swaync-client -c -sw"
-    },
-    
-    "cpu": {
-        "tooltip": false,
-        "format": "  {usage}%",
-        "interval": 1
-    },
-    
-    "memory": {
-        "tooltip": false,
-        "format": "   {used:0.1f}G",
-        "interval": 1
     }
 }

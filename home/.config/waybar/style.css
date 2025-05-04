@@ -1,6 +1,6 @@
 @import "$HOME/.cache/wal/colors-universal.css";
 
-@define-color text   #C0C0C1;
+@define-color text   #FFFFFF;
 @define-color accent rgba(46,46,50,1);
 
 
@@ -21,8 +21,6 @@
 window#waybar {
     background: #010306;
 }
-#cpu,
-#memory,
 #custom-power,
 #clock,
 #tray,
@@ -30,8 +28,8 @@ window#waybar {
 #custom-swaync,
 #language,
 #pulseaudio {
-    margin: 4px 4px 4px 0px;
-    padding: 2px 7px;
+    margin: 4px 5px 4px 0px;
+    padding: 1px 7px;
     background-color: @accent;
     color: @text; 
     border-radius: 6px;
