@@ -1,0 +1,13 @@
+configuration {
+    modi:                       "drun";
+    font:                       "Noto Sans 11";
+    show-icons:                 true;
+    display-drun:                " 󱂬 ";
+    drun-display-format:        "{name}";
+    hover-select:               false;
+    scroll-method:              1;
+    me-select-entry:            "";
+    me-accept-entry:            "MousePrimary";    
+}
+
+@theme "~/.config/rofi/themes/round-gray.rasi"

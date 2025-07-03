@@ -1,27 +1,35 @@
-import pathlib, shutil, os
+import os
+import pathlib
+import shutil
 
-def install_homefiles():
-	file_dir = pathlib.Path(__file__).parent.parent.resolve()
-	home = pathlib.Path(os.path.expanduser('~')).resolve()
-	source_dir = file_dir / 'home'
+from tools.log_tools import err_log
 
-	def copy_with_replace(src, dst):
-		try:
-			if src.is_dir():
-				if not dst.exists():
-					dst.mkdir(parents=True)
-				for item in src.iterdir():
-					copy_with_replace(item, dst / item.name)
-			else:
-				shutil.copy2(src, dst, follow_symlinks=False)
-		except Exception as e:
-			pass
 
-	if source_dir.exists():
-		for item in source_dir.iterdir():
-			copy_with_replace(item, home / item.name)
-		
-		shutil.rmtree(source_dir, ignore_errors=True)
+def install_homefiles(do_backup):
+    file_dir = pathlib.Path(__file__).parent.parent.resolve()
+    home = pathlib.Path(os.path.expanduser("~")).resolve()
+    source_dir = file_dir / "home"
 
-if __name__ == '__main__':
-	install_homefiles()
+    def copy_with_replace(src, dst):
+        try:
+            if src.is_dir():
+                if not dst.exists():
+                    dst.mkdir(parents=True)
+                for item in src.iterdir():
+                    copy_with_replace(item, dst / item.name)
+            else:
+                if src.name == "custom.conf" and dst.is_file():
+                    pass
+                else:
+                    if do_backup:
+                        if dst.is_file():
+                            os.rename(dst, str(dst) + ".backup")
+                    shutil.copy2(src, dst, follow_symlinks=False)
+        except Exception as e:
+            err_log(e)
+
+    copy_with_replace(source_dir, home)
+
+
+if __name__ == "__main__":
+    install_homefiles()

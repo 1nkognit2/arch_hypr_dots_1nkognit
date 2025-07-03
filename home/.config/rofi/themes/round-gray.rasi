@@ -1,0 +1,89 @@
+* {
+
+    bg0:rgba(37, 39, 45, 0.65); // Main bg
+    bg1:rgba(63, 74, 88, 0.7); // Accent
+    fg0:rgba(216, 222, 233, 1); // Text and caret color
+    fg1:rgba(155, 155, 155, 1); // Search
+	
+    font:   "Noto Sans 12";
+
+    background-color:   transparent;
+    text-color:         @fg0;
+
+    margin:     0px;
+    padding:    0px;
+    spacing:    0px;
+}
+
+window {
+    location:       north;
+    y-offset:       calc(50% - 176px);
+    width:          480;
+    height:  382px;
+    background-color:   @bg0;
+}
+
+mainbox {
+    padding:    12px;
+}
+
+inputbar {
+    border-color:       @bg1;
+
+    border:         2px;
+    border-radius:  16px;
+
+    padding:    8px 16px;
+    spacing:    8px;
+    children:   [ prompt, entry ];
+}
+
+prompt {
+    text-color: @fg0;
+}
+
+entry {
+    placeholder:        "Search";
+    placeholder-color:  @fg1;
+}
+
+textbox {
+    padding:    8px 24px;
+}
+
+listview {
+    background-color:   transparent;
+
+    margin:     12px 0 0;
+    lines:      8;
+    columns:    1;
+
+    fixed-height: false;
+}
+
+element {
+    padding:        8px 16px;
+    spacing:        8px;
+    border-radius:  16px;
+}
+
+element normal active {
+    text-color: @bg1;
+}
+
+element alternate active {
+    text-color: @bg1;
+}
+
+element selected normal, element selected active {
+    background-color:   @bg1;
+}
+
+element-icon {
+    size:           1em;
+    vertical-align: 0.5;
+}
+
+element-text {
+    text-color: inherit;
+}
