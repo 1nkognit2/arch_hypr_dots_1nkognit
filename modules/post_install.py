@@ -23,7 +23,7 @@ def post_install(do_reboot, do_ly_dm):
     file.close()
 
     # Walpaper set
-    image = f"{home}/Wallpapers/urban.png"
+    image = f"{home}/Wallpapers/wallpaper1.png"
 
     log_cmd(f"wal -i {image}")
 

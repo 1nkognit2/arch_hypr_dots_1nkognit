@@ -8,7 +8,6 @@ def install_packages(selected_drivers, do_ly_dm, do_update_system):
             "hyprpicker",
             "hyprpolkitagent",
             "hyprpaper",
-            "hyprlock",
             "hypridle",
             "hyprsunset",
             "gtk3",
@@ -67,9 +66,9 @@ def install_packages(selected_drivers, do_ly_dm, do_update_system):
             "bat",
             "cloc",
             "tree",
-            "htop",
             "cava",
             "trash-cli",
+            "telegram-desktop",
         ],
         "Aur": [
             "oh-my-posh-bin",
@@ -78,7 +77,6 @@ def install_packages(selected_drivers, do_ly_dm, do_update_system):
             "papirus-icon-theme",
             "papirus-folders",
             "bibata-cursor-theme-bin",
-            "emote",
             "visual-studio-code-bin",
         ],
     }

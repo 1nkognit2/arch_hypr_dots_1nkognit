@@ -1,10 +1,10 @@
-@import "$HOME/.cache/wal/colors-universal.css";
+@import "/home/inkognit/.cache/wal/colors-universal.css";
 
 @define-color text rgba(255,255,255,1);
 @define-color accent @color1;
 
 @define-color text rgba(255,255,255,1);
-@define-color accent @color1;
+@define-color accent rgba(46,46,50,1);
 
 * {
     outline: none;
@@ -15,7 +15,7 @@
     min-height: 0;
     font-family: "JetBrains Mono";
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     padding: 0px;
     background-clip: padding-box;
 }
@@ -36,7 +36,7 @@ window#waybar {
     padding: 2px 8px;
     min-width: 12px;
     background-color: @accent;
-    border-radius: 6px 6px 10px 10px;
+    border-radius: 9px 9px 9px 9px;
     color: @text;
 }
 
@@ -50,7 +50,7 @@ window#waybar {
     margin: 4px 0px 4px 4px;
     padding: 2px;
     background: rgba(0,0,0,0.3);
-    border-radius: 6px 6px 12px 12px;
+    border-radius: 9px 9px 12px 12px;
 }
 
 #workspaces button {
@@ -59,7 +59,7 @@ window#waybar {
     background: @accent1;
     color: @text;
     transition: all 0.25s ease-out;
-    border-radius: 4px 4px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
 }
 
 #workspaces button:hover {
@@ -74,7 +74,7 @@ window#waybar {
 
 #custom-swaync {
     padding-left: 7px;
-    padding-right: 9px;
+    padding-right: 10px;
 }
 
 #battery {
@@ -84,5 +84,5 @@ window#waybar {
 
 #custom-powermenu {
     padding-left: 7px;
-    padding-right: 10px;
+    padding-right: 11px;
 }
