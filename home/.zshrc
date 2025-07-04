@@ -26,7 +26,6 @@ alias b="bat"
 alias rm="trash-put"
 alias rmF="rm"
 alias pac="sudo pacman"
-alias stat="cloc ."
 
 autoload -U compinit
 compinit
