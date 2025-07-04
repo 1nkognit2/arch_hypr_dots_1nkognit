@@ -78,6 +78,7 @@ def install_packages(selected_drivers, do_ly_dm, do_update_system):
             "papirus-folders",
             "bibata-cursor-theme-bin",
             "visual-studio-code-bin",
+            "discord",
         ],
     }
 
