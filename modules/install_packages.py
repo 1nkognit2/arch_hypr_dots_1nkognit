@@ -68,7 +68,6 @@ def install_packages(selected_drivers, do_ly_dm, do_update_system):
             "tree",
             "cava",
             "trash-cli",
-            "telegram-desktop",
         ],
         "Aur": [
             "oh-my-posh-bin",
@@ -78,6 +77,7 @@ def install_packages(selected_drivers, do_ly_dm, do_update_system):
             "papirus-folders",
             "bibata-cursor-theme-bin",
             "visual-studio-code-bin",
+            "ayugram-desktop-bin",
             "discord",
         ],
     }
