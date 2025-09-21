@@ -1,11 +1,11 @@
 * {
 
-    bg0:rgba(37, 39, 45, 0.65); // Main bg
-    bg1:rgba(63, 74, 88, 0.7); // Accent
+    bg0:rgba(20, 20, 20, 0.5); // Main bg
+    bg1:rgba(67, 67, 67, 1); // Accent
     fg0:rgba(216, 222, 233, 1); // Text and caret color
     fg1:rgba(155, 155, 155, 1); // Search
 	
-    font:   "Noto Sans 12";
+    font:   "Noto Sans 11";
 
     background-color:   transparent;
     text-color:         @fg0;
@@ -21,6 +21,7 @@ window {
     width:          480;
     height:  382px;
     background-color:   @bg0;
+    border-radius: 16px;
 }
 
 mainbox {

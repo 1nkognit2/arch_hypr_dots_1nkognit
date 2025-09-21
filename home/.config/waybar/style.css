@@ -4,7 +4,7 @@
 @define-color accent @color1;
 
 @define-color text rgba(255,255,255,1);
-@define-color accent rgba(46,46,50,1);
+@define-color accent @color1;
 
 * {
     outline: none;
@@ -15,16 +15,18 @@
     min-height: 0;
     font-family: "JetBrains Mono";
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     padding: 0px;
     background-clip: padding-box;
 }
 
 window#waybar {
-    background: rgba(0,0,0,0.4);
-    border-radius: 0px 0px 16px 16px;
+    background: rgba(0,0,0,0.450);
+    border-radius: 0px 0px 12px 12px;
 }
 
+#cpu,
+#memory,
 #clock,
 #tray,
 #custom-powermenu,
@@ -32,34 +34,31 @@ window#waybar {
 #custom-swaync,
 #language,
 #pulseaudio {
-    margin: 6px 6px 6px 0px;
-    padding: 2px 8px;
+    margin: 3px 5px 3px 0px;
+    padding: 0px 7px;
     min-width: 12px;
-    background-color: @accent;
-    border-radius: 9px 9px 9px 9px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 8px 8px 8px 8px;
     color: @text;
 }
 
 #window {
-    margin: 6px 6px 6px 6px;
     padding: 2px 8px;
     color: @text;
 }
 
 #workspaces {
-    margin: 4px 0px 4px 4px;
-    padding: 2px;
+    margin: 3px 5px 3px 5px;
     background: rgba(0,0,0,0.3);
-    border-radius: 9px 9px 12px 12px;
+    border-radius: 8px 8px 8px 8px;
 }
 
 #workspaces button {
-    padding: 0px 4px;
-    margin: 3px 2px;
+    margin: 4px 4px;
     background: @accent1;
     color: @text;
     transition: all 0.25s ease-out;
-    border-radius: 7px 7px 7px 7px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 #workspaces button:hover {
@@ -74,7 +73,7 @@ window#waybar {
 
 #custom-swaync {
     padding-left: 7px;
-    padding-right: 10px;
+    padding-right: 8px;
 }
 
 #battery {
@@ -84,5 +83,9 @@ window#waybar {
 
 #custom-powermenu {
     padding-left: 7px;
-    padding-right: 11px;
+    padding-right: 10px;
+}
+
+#pulseaudio.muted {
+    color: #FF0000;
 }
