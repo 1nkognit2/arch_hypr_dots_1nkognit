@@ -34,7 +34,7 @@ window#waybar {
 #custom-swaync,
 #language,
 #pulseaudio {
-    margin: 3px 5px 3px 0px;
+    margin: 2px 5px 2px 0px;
     padding: 0px 7px;
     min-width: 12px;
     background: rgba(0,0,0,0.3);
@@ -48,13 +48,13 @@ window#waybar {
 }
 
 #workspaces {
-    margin: 3px 5px 3px 5px;
+    margin: 2px 5px 2px 5px;
     background: rgba(0,0,0,0.3);
     border-radius: 8px 8px 8px 8px;
 }
 
 #workspaces button {
-    margin: 4px 4px;
+    margin: 3px 3px;
     background: @accent1;
     color: @text;
     transition: all 0.25s ease-out;

@@ -57,11 +57,12 @@
     "hyprland/language": {
         "format": "{}",
         "format-en": "󰌌 US",
-        "format-ru": "󰌌 RU"
+        "format-ru": "󰌌 RU",
+        "format-ee": "󰌌 EST"
     },
 
     "tray": {
-        "icon-size": 13,
+        "icon-size": 12,
         "spacing": 10,
         "tooltip": false
     },
