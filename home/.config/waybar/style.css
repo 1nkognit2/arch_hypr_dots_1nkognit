@@ -15,7 +15,7 @@
     min-height: 0;
     font-family: "JetBrains Mono";
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     padding: 0px;
     background-clip: padding-box;
 }
@@ -38,7 +38,7 @@ window#waybar {
     padding: 0px 7px;
     min-width: 12px;
     background: rgba(0,0,0,0.3);
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 6px 6px 6px 6px;
     color: @text;
 }
 
@@ -50,7 +50,7 @@ window#waybar {
 #workspaces {
     margin: 2px 5px 2px 5px;
     background: rgba(0,0,0,0.3);
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 #workspaces button {
@@ -58,7 +58,7 @@ window#waybar {
     background: @accent1;
     color: @text;
     transition: all 0.25s ease-out;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 6px 6px 6px 6px;
 }
 
 #workspaces button:hover {
