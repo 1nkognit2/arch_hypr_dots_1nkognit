@@ -70,6 +70,7 @@ def install_packages(selected_drivers, do_ly_dm, do_update_system):
             "tree",
             "cava",
             "trash-cli",
+            "gvfs",
             "telegram-desktop",
         ],
         "Aur": [
