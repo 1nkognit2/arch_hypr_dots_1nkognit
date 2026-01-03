@@ -17,7 +17,7 @@ def install_packages(selected_drivers, do_ly_dm, do_update_system):
             "qt5ct",
             "qt6ct",
             "gnome-themes-extra",
-            "firefox",
+            "zen-browser-bin",
             "nano",
             "flatpak",
             "nautilus",
@@ -72,6 +72,8 @@ def install_packages(selected_drivers, do_ly_dm, do_update_system):
             "trash-cli",
             "gvfs",
             "telegram-desktop",
+            "obsidian",
+            "waypaper",
         ],
         "Aur": [
             "oh-my-posh-bin",

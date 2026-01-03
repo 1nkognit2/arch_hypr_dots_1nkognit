@@ -4,9 +4,9 @@
     "spacing": 0,
     "height": 20,
     "margin-top": 0,
-    "margin-right": 0,
+    "margin-right": 9,
     "margin-bottom": 0,
-    "margin-left": 0,
+    "margin-left": 9,
 
     "modules-left": [
         "hyprland/workspaces"
@@ -83,14 +83,15 @@
     "network": {
         "format-ethernet": "󰈀",
         "format-disconnected": "󰖪",
-        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"], // Иконки уровня сигнала
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
         "interval": 1,
         "tooltip-format": "{ifname} via {gwaddr}",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} ",
         "tooltip-format-disconnected": "Disconnected",
         "tooltip": false,
-        "on-click": "nm-connection-editor" // Открывает меню настроек при клике
+        // ИЗМЕНЕНИЕ ЗДЕСЬ: Запуск через hyprctl с параметрами float/size/center
+        "on-click": "hyprctl dispatch exec '[float;size 700 500;center] nm-connection-editor'"
     },
 
     "clock": {

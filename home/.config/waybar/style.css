@@ -19,7 +19,7 @@
 
 window#waybar {
     background: rgba(0,0,0,0.450);
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 0px 8px 8px;
 }
 
 /* --- МОДУЛИ (Базовый стиль) --- */
