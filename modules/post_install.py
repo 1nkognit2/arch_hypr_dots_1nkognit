@@ -82,7 +82,7 @@ def post_install(do_reboot, do_ly_dm):
 
     # Ly dm
     if do_ly_dm:
-        log_cmd("sudo systemctl enable ly")
+        log_cmd("sudo systemctl enable ly@tty2")
 
     # Reboot
     if do_reboot:
