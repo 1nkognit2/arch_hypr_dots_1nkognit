@@ -3,30 +3,30 @@
     "layer": "bottom",
     "spacing": 0,
     "height": 20,
-
     "margin-top": 0,
-    "margin-right": 9,
+    "margin-right": 0,
     "margin-bottom": 0,
-    "margin-left": 9,
+    "margin-left": 0,
 
     "modules-left": [
-     	"hyprland/workspaces"       
+        "hyprland/workspaces"
     ],
 
     "modules-center": [
-
+        "custom/proxmox_1",
+        "custom/proxmox_2"
     ],
 
     "modules-right": [
         "tray",
         "hyprland/language",
+        "network",
         "custom/swaync",
         "battery",
         "pulseaudio",
         "clock",
         "custom/powermenu"
-     ],
-    
+    ],
 
     "battery": {
         "format": "{icon}",
@@ -34,12 +34,10 @@
             "default": ["", "", "", "", ""],
             "charging": [""]
         },
-        
         "states": {
             "warning": 20,
             "critical": 10
         },
-        
         "tooltip-format": "Battery: {capacity}% ({time})",
         "interval": 1,
         "max-length": 25
@@ -48,7 +46,7 @@
     "hyprland/workspaces" : {
         "on-click": "activate",
         "all-outputs": true,
-        "format": "{}",
+        "format": "{name}",
         "persistent-workspaces": {
             "*": 1
         }
@@ -66,11 +64,10 @@
         "spacing": 10,
         "tooltip": false
     },
-    
+
     "pulseaudio": {
         "scroll-step": 1,
         "max-volume": 150,
-
         "format": "{icon}{volume}%",
         "format-muted": " {volume}%",
         "format-icons": {
@@ -82,20 +79,41 @@
         "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": false
     },
-    
+
     "network": {
-        "format-wifi": "󰖩",
         "format-ethernet": "󰈀",
         "format-disconnected": "󰖪",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"], // Иконки уровня сигнала
         "interval": 1,
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
         "tooltip": false,
-        "on-click": "nm-connection-editor"
+        "on-click": "nm-connection-editor" // Открывает меню настроек при клике
     },
 
     "clock": {
         "format": " {:%H:%M}",
         "format-alt": "󰸗 {:%a %B %d %Y  %H:%M}",
-        "tooltip": false,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "year",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions":  {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        },
         "interval": 1
     },
 
@@ -104,10 +122,28 @@
         "on-click": "swaync-client -t",
         "tooltip": false
     },
-    
+
     "custom/powermenu": {
         "format": "",
-        "on-click": "~/.config/rofi/powermenu.sh",
+        "on-click": "systemctl suspend",
         "tooltip": false
+    },
+
+    "custom/proxmox_1": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/proxmox.py 192.168.0.201",
+        "on-click": "xdg-open https://192.168.0.201:8006",
+        "interval": 10,
+        "tooltip": true
+    },
+
+    "custom/proxmox_2": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/proxmox.py 192.168.0.202",
+        "on-click": "xdg-open https://192.168.0.202:8006",
+        "interval": 10,
+        "tooltip": true
     }
 }
