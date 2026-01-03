@@ -1,6 +1,6 @@
 * {
 
-    bg0:rgba(20, 20, 20, 0.5); // Main bg
+    bg0:rgba(27, 27, 27, 0.8); // Main bg
     bg1:rgba(67, 67, 67, 1); // Accent
     fg0:rgba(216, 222, 233, 1); // Text and caret color
     fg1:rgba(155, 155, 155, 1); // Search

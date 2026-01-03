@@ -1,186 +1,122 @@
-@define-color cc-bg rgba(46, 46, 46, 0.7);
-@define-color noti-border-color rgba(255, 255, 255, 0.15);
-@define-color noti-bg rgba(37, 41, 51, 0.8);
-@define-color noti-bg-opaque rgba(37, 41, 51, 0.9);
-@define-color noti-bg-darker rgb(38, 38, 38);
-@define-color noti-bg-hover rgb(47, 51, 61);
-@define-color noti-bg-hover-opaque rgb(56, 56, 56);
-@define-color noti-bg-focus rgba(68, 68, 68, 0.6);
-@define-color noti-close-bg rgba(255, 255, 255, 0.1);
-@define-color noti-close-bg-hover rgba(255, 255, 255, 0.15);
-@define-color text-color rgb(255, 255, 255);
-@define-color text-color-disabled rgb(150, 150, 150);
-@define-color bg-selected rgb(64, 80, 122);
-@define-color mpris-album-art-overlay rgba(0, 0, 0, 0.55);
-@define-color mpris-button-hover rgba(0, 0, 0, 0.50);
+/* ЦВЕТОВАЯ ПАЛИТРА */
+@define-color cc-bg #151515;       /* Фон всего центра */
+@define-color widget-bg #242424;   /* Фон уведомлений и кнопок */
+@define-color border-col #2E2E32;  /* Цвет рамок */
+@define-color text-col #ffffff;    /* Текст */
+@define-color hover-bg #2E2E32;    /* Цвет при наведении */
 
-/* Base styles */
-.notification-row {
-  outline: none;
+* {
+    font-family: "JetBrains Mono";
+    font-weight: 700;
+    font-size: 13px;
 }
 
-.notification-row:focus, 
-.notification-row:hover {
-  background: @noti-bg-focus;
+/* --- ОСНОВНОЕ ОКНО --- */
+.control-center {
+    background: @cc-bg;
+    border: 1px solid @border-col;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 4px; /* Небольшой отступ внутри */
 }
 
-/* Notification elements */
-.notification-background {
-  padding: 6px 12px;
+/* --- ЗАГОЛОВОК И КНОПКА ОЧИСТКИ --- */
+.control-center .widget-title {
+    color: @text-col;
+    padding: 8px;
+    margin-bottom: 4px;
 }
 
-.close-button {
-  background: @noti-close-bg;
-  color: @text-color;
-  padding: 0;
-  border-radius: 100%;
-  margin: 5px 5px 0 0;
-  min-width: 24px;
-  min-height: 24px;
-  border: none;
-  box-shadow: none;
-  text-shadow: none;
+.control-center .widget-title button {
+    background: @widget-bg;
+    color: @text-col;
+    border-radius: 4px;
+    border: 1px solid @border-col; 
+    box-shadow: none;
+    padding: 4px 12px;
 }
 
-.close-button:hover {
-  background: @noti-close-bg-hover;
-  transition: background 0.15s ease-in-out;
+.control-center .widget-title button:hover {
+    background: @hover-bg;
+    border-color: #ffffff; /* Подсветка рамки при наведении */
 }
 
+/* --- УВЕДОМЛЕНИЯ --- */
 .notification {
-  border-radius: 12px;
-  border: none;
-  transition: background 0.15s ease-in-out;
-  background: @noti-bg;
+    background: @widget-bg;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 4px 0px; /* Отступы между уведомлениями */
+    border: 1px solid @border-col;
+    box-shadow: none;
+    transition: all 0.2s ease;
 }
 
-.notification-action, 
-.notification-default-action {
-  margin: 0;
-  background: transparent;
-  border: none;
-  color: @text-color;
-  transition: background 0.15s ease-in-out;
-  box-shadow: none;
+/* Эффект наведения */
+.notification:hover {
+    background: @hover-bg;
+    border-color: #ffffff;
 }
 
-.notification-action:hover, 
-.notification-default-action:hover {
-  background: @noti-bg-hover;
-}
-
-.notification-default-action {
-  border-radius: 12px;
-}
-
-.notification-default-action:not(:only-child) {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.notification-content {
-  background: transparent;
-  border-radius: 12px;
-  padding: 4px;
-}
-
-/* Text elements */
 .summary {
-  font-size: 16px;
-  font-weight: bold;
-  color: @text-color;
-  padding: 5px 5px 0 5px;
-}
-
-.time {
-  font-size: 16px;
-  font-weight: bold;
-  color: @text-color;
-  margin-right: 30px;
+    color: @text-col;
+    font-weight: 800;
 }
 
 .body {
-  font-size: 15px;
-  color: @text-color;
-  padding: 0 5px 5px 5px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 4px;
 }
 
-/* Control center */
-.control-center {
-  background: @noti-bg-opaque;
-  margin: 12px;
-  color: @text-color;
-  border-radius: 12px;
+.time {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    margin-right: 4px;
 }
 
-.control-center-list {
-  background: transparent;
+/* Кнопки внутри уведомлений (Accept/Decline и т.д.) */
+.notification-action {
+    background: rgba(0, 0, 0, 0.2);
+    color: @text-col;
+    border: 1px solid @border-col;
+    border-radius: 4px;
+    margin-top: 6px;
 }
 
-.control-center-list .notification {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 
-              0 1px 3px 1px rgba(0, 0, 0, 0.1), 
-              0 2px 6px 2px rgba(0, 0, 0, 0.1);
+.notification-action:hover {
+    background: @hover-bg;
+    border-color: #ffffff;
 }
 
-/* Widgets */
-.widget-title,
-.widget-dnd,
-.widget-label,
-.widget-inhibitors {
-  margin: 8px;
-  color: @text-color;
-}
-
-.widget-title {
-  font-size: 1.5rem;
-}
-
+/* --- КНОПКА "НЕ БЕСПОКОИТЬ" (DND) --- */
 .widget-dnd {
-  font-size: 1.1rem;
+    background: @widget-bg;
+    margin: 4px 0px 8px 0px; /* Отступ снизу перед списком */
+    border-radius: 4px;
+    border: 1px solid @border-col;
+    padding: 4px;
 }
 
-.widget-label label {
-  font-size: 1.1rem;
+.widget-dnd > switch {
+    background: rgba(0,0,0,0.3);
+    border-radius: 4px;
+    border: 1px solid @border-col;
 }
 
-.widget-inhibitors {
-  font-size: 1.5rem;
+.widget-dnd > switch:checked {
+    background: @hover-bg; /* Или можно сделать белым для акцента */
+    border: 1px solid #ffffff;
 }
 
-/* Common widget buttons */
-button {
-  color: @text-color;
-  background: @noti-bg;
-  border: 1px solid @noti-border-color;
-  border-radius: 12px;
-  box-shadow: none;
+.widget-dnd > switch slider {
+    background: @text-col;
+    border-radius: 2px;
 }
 
-button:hover {
-  background: @noti-bg-hover;
-}
-
-/* Special widgets */
-.widget-mpris-player {
-  padding: 16px;
-  margin: 16px 20px;
-  background-color: @mpris-album-art-overlay;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
-}
-
-.widget-buttons-grid,
-.widget-volume,
-.widget-backlight {
-  padding: 8px;
-  margin: 8px;
-  border-radius: 12px;
-  background-color: @noti-bg;
-}
-
-/* Utility classes */
-.blank-window,
-.floating-notifications {
-  background: transparent;
+/* --- ВСПЛЫВАЮЩИЕ УВЕДОМЛЕНИЯ (Floating) --- */
+.floating-notifications .notification {
+    background: @widget-bg;
+    border: 1px solid @border-col;
+    border-radius: 4px;
+    margin: 4px;
 }
